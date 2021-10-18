@@ -1,6 +1,7 @@
 import cv2
 import time 
 import datetime 
+import os
 from time import sleep
 
 a = 0
@@ -26,9 +27,10 @@ while True:
 
         if a == 10: 
             print("einde")
+            # os.system('shutdown /p')
 
     # for (x, y, width, height) in faces:
-    #    cv2.rectangle(frame, (x, y), (x + width, y + height), (255, 0, 0), 3)
+    #     cv2.rectangle(frame, (x, y), (x + width, y + height), (255, 0, 0), 3)
 
     cv2.imshow("Camera", frame)
 
